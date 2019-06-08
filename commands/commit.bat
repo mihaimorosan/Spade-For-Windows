@@ -1,7 +1,7 @@
 @ECHO OFF
-IF EXIST [Folder where you installed it]\commands\currentrepository.txt (
-    FOR /F "delims=" %%i IN ([Folder wher you installed it]\commands\currentrepository.txt) DO (
-        CP %1 "[Directory of your OneDrive Folder]\%%i"
+IF EXIST [folder of where you installed it]\commands\currentrepository.txt (
+    FOR /F "delims=" %%i IN ([folder of where you installed it]\commands\currentrepository.txt) DO (
+        COPY %1 "[directory of you OneDrive folder]\%%i"
         ECHO Succesfully commited %1 to %%i
     )
     CMD /K

@@ -1,10 +1,10 @@
 @ECHO OFF
-IF EXIST [Folder where you installed it]\commands\currentrepository.txt (
-    SET /P currentrepository=< [Folder where you installed it]\currentrepository.txt
+IF EXIST [folder of where you installed it]\commands\currentrepository.txt (
+    SET /P currentrepository=< [folder of where you installed it]\commands\currentrepository.txt
     ECHO Leaving repository %currentrepository%
     TITLE Command Prompt
     PROMPT
-    RM [Folder where you installed it]\commands\currentrepository.txt
+    DEL [folder of where you installed it]\commands\currentrepository.txt
 
     CMD /K
 ) ELSE (
